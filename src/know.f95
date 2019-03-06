@@ -230,7 +230,23 @@ contains
 		pi0prog = 1.0d0
 		costprog = 0.0d0
 		idelta = 1
-								
+
+		if (scenario .eq. 'baseline_delta_min') then
+			delta0 = -0.03d0
+		end if
+
+		if (scenario .eq. 'baseline_delta_max') then
+			delta0 = -0.09d0
+		end if
+
+		if (scenario .eq. 'baseline_pi0_min') then
+			pi0 = 25.0d0
+		end if
+
+		if (scenario .eq. 'baseline_pi0_max') then
+			pi0 = 75.0d0
+		end if
+
 		! policy simulations
 		if (scenario .eq. 'prog1') then
 			idprog = 1
@@ -305,12 +321,43 @@ contains
 		if (scenario .eq. 'prog11') then
 			idprog = 1
 			ageprog = 15
-			pi0prog = 0.05d0
+			pi0prog = 0.1d0
 			costprog = 100.0d0
 			idelta = 0
 		end if
 		
+		if (scenario .eq. 'prog12_delta_min') then
+			idprog = 1
+			ageprog = 15
+			pi0prog = 0.1d0
+			costprog = 100.0d0
+			delta0 = -0.03d0
+		end if
 		
+		if (scenario .eq. 'prog12_delta_max') then
+			idprog = 1
+			ageprog = 15
+			pi0prog = 0.1d0
+			costprog = 100.0d0
+			delta0 = -0.09d0
+		end if
+
+		if (scenario .eq. 'prog12_pi0_min') then
+			idprog = 1
+			ageprog = 15
+			pi0prog = 0.1d0
+			costprog = 100.0d0
+			pi0 = 25.0d0
+		end if
+
+		if (scenario .eq. 'prog12_pi0_max') then
+			idprog = 1
+			ageprog = 15
+			pi0prog = 0.1d0
+			costprog = 100.0d0
+			pi0 = 75.0d0
+		end if
+
 		if (scenario .eq. 'baseline') then
 			!call draws
 		end if
