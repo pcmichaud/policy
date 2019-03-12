@@ -1,0 +1,8 @@
+#!/b#$ -N scenarios
+
+
+
+mpiexec ./runscenario baseline
+
+
+ 

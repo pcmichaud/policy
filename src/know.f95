@@ -325,7 +325,14 @@ contains
 			costprog = 100.0d0
 			idelta = 0
 		end if
-		
+
+		if (scenario .eq. 'prog12') then
+			idprog = 1
+			ageprog = 15
+			pi0prog = 0.1d0
+			costprog = 100.0d0
+		end if
+
 		if (scenario .eq. 'prog12_delta_min') then
 			idprog = 1
 			ageprog = 15
@@ -399,7 +406,7 @@ contains
         allocate(gamma(ne))
 
 		beta(:) = beta_0
-        gamma(:) = gamma_0
+    gamma(:) = gamma_0
         
 		if (icagetti.eq.1) then
 		    open(1,file='../params/cag2003.csv')
@@ -1849,11 +1856,12 @@ contains
 						end if
 						incsim(i,s) = inc
 
+						z = fdepreciate(s)*fsim(i,s)
 						! net financial knowledge
-						if (part.eq.0) then
-						    z = fdepreciate(s)*fsim(i,s)	
+						if (part.eq.1 .and. scenario .eq. 'prog11') then
+						    z = fsim(i,s)	
 						else
-						    z = fsim(i,s)
+						    z = fdepreciate(s)*fsim(i,s)
 						end if
 											
 						! cash-on-hand

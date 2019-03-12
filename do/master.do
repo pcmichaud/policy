@@ -11,7 +11,7 @@ net install grc1leg,from( http://www.stata.com/users/vwiggins/)
 ssc install outtable
 
 * to take fortran output for each scn and create dataset
-*do do/prepare-data.do
+do do/prepare-data.do
 
 * produce table 1 (participation)
 do do/program_participation.do
@@ -36,3 +36,9 @@ do do/late-atet.do
 
 * produce table 7 (diff in diff)
 do do/diffindiff.do
+
+* produce robustness table (new in revision)
+do do/robust.do
+
+* produce table on heterogeneity by education and income
+do do/hetero.do

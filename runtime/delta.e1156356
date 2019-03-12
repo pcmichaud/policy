@@ -1,0 +1,19 @@
+error: executing task of job 1156356 failed: execution daemon on host "hpcc026.wharton.upenn.edu" didn't accept task
+[hpcc032.wharton.upenn.edu:20669] [[29178,0],6] tcp_peer_send_blocking: send() to socket 9 failed: Broken pipe (32)
+[hpcc031.wharton.upenn.edu:04309] [[29178,0],17] tcp_peer_send_blocking: send() to socket 9 failed: Broken pipe (32)
+[hpcc008.wharton.upenn.edu:17966] [[29178,0],28] tcp_peer_send_blocking: send() to socket 9 failed: Broken pipe (32)
+[hpcc010.wharton.upenn.edu:35776] [[29178,0],14] tcp_peer_send_blocking: send() to socket 9 failed: Broken pipe (32)
+error: executing task of job 1156356 failed: execution daemon on host "hpcc029.wharton.upenn.edu" didn't accept task
+error: executing task of job 1156356 failed: execution daemon on host "hpcc009.wharton.upenn.edu" didn't accept task
+[hpcc021.wharton.upenn.edu:45686] [[29178,0],29] tcp_peer_send_blocking: send() to socket 9 failed: Broken pipe (32)
+[hpcc024.wharton.upenn.edu:04009] [[29178,0],23] tcp_peer_send_blocking: send() to socket 9 failed: Broken pipe (32)
+[hpcc012.wharton.upenn.edu:43873] [[29178,0],8] tcp_peer_send_blocking: send() to socket 9 failed: Broken pipe (32)
+[hpcc020.wharton.upenn.edu:30691] [[29178,0],27] tcp_peer_send_blocking: send() to socket 9 failed: Broken pipe (32)
+[hpcc018.wharton.upenn.edu:37519] [[29178,0],12] tcp_peer_send_blocking: send() to socket 9 failed: Broken pipe (32)
+[hpcc030.wharton.upenn.edu:25101] [[29178,0],25] tcp_peer_send_blocking: send() to socket 9 failed: Broken pipe (32)
+[hpcc007.wharton.upenn.edu:38199] [[29178,0],3] tcp_peer_send_blocking: send() to socket 9 failed: Broken pipe (32)
+[hpcc019.wharton.upenn.edu:10106] [[29178,0],24] tcp_peer_send_blocking: send() to socket 9 failed: Broken pipe (32)
+[hpcc016.wharton.upenn.edu:16440] [[29178,0],5] tcp_peer_send_blocking: send() to socket 9 failed: Broken pipe (32)
+[hpcc011.wharton.upenn.edu:35887] [[29178,0],15] tcp_peer_send_blocking: send() to socket 9 failed: Broken pipe (32)
+error: executing task of job 1156356 failed: execution daemon on host "hpcc005.wharton.upenn.edu" didn't accept task
+error: executing task of job 1156356 failed: execution daemon on host "hpcc025.wharton.upenn.edu" didn't accept task
